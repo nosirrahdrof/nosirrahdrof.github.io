@@ -1,0 +1,431 @@
+<html>
+<script>
+function openTab(tabName) {
+   var i;
+   var x = document.getElementsByClassName("tab");
+   for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";
+   }
+   document.getElementById(tabName).style.display = "block";
+}
+</script>
+<script>var whTooltips = {colorLinks: true, iconizeLinks: true, renameLinks: true};</script><script src="https://wow.zamimg.com/widgets/power.js"></script>
+<style>
+html { background-color: #000; };
+.divTable{ display: table; float: left; margin: 10px 10px; }
+.divTableRow { display: table-row; background-color: #000}
+.divTableRow:hover { background-color: #222; }
+.divTableHeading { background-color: #EEE; display: table-header-group; }
+.divTableCell, .divTableHead { border: 1px solid #999999; display: table-cell; padding: 3px 10px; }
+.divPlayer { border: 1px solid #999999; display: table-cell; width: 700px; padding: 3px 10px; text-align: left; vertical-align: middle; word-wrap: normal; color: #ffffff; }
+.divClass { border: 1px solid #999999; display: table-cell; padding: 3px 10px; text-align: center; vertical-align: middle; color: #ffffff; }
+.divDKP { border: 1px solid #999999; display: table-cell; width: 200px%; padding: 3px 10px; text-align: center; vertical-align: middle; color: #ffffff; }
+.divPlayerHeader { border: 1px solid #999999; display: table-cell; font-weight: bold; width: 50%; padding: 3px 10px; text-align: left; background-color: #bbb; }
+.divClassHeader { border: 1px solid #999999; display: table-cell; font-weight: bold; width: 150px; padding: 3px 10px; text-align: center; background-color: #bbb; }
+.divDKPHeader { border: 1px solid #999999; display: table-cell; font-weight: bold; width: 30%; padding: 3px 10px; text-align: center; background-color: #bbb; }
+.divTableHeading { background-color: #EEE; display: table-header-group; font-weight: bold; }
+.divTableFoot { background-color: #EEE; display: table-footer-group; font-weight: bold; }
+.divTableBody { display: table-row-group; }
+</style>
+
+<br /><br />
+<div>
+   <button onclick="openTab('DKP')">DKP Table</button>
+   <button onclick="openTab('DKPHistory')">DKP History</button>
+   <button onclick="openTab('LootHistory')">Loot History</button>
+</div>
+<br /><br />
+<div id="DKP" class="tab"><div class="divTable" style="width: 30%;border: 1px solid #000;">
+   <div class="divTableBody">
+      <div class="divTableRow">
+         <div class="divPlayerHeader">Player</div>
+         <div class="divClassHeader">Class</div>
+         <div class="divDKPHeader">DKP</div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer">Ardritha</div>
+         <div class="divClass" style="width: 150px;"><img src="https://wow.zamimg.com/images/wow/icons/large/classicon_priest.jpg" height="24" width="24" /></div>
+         <div class="divDKP">342</div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer">Asoka</div>
+         <div class="divClass" style="width: 150px;"><img src="https://wow.zamimg.com/images/wow/icons/large/classicon_hunter.jpg" height="24" width="24" /></div>
+         <div class="divDKP">150</div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer">Blickem</div>
+         <div class="divClass" style="width: 150px;"><img src="https://wow.zamimg.com/images/wow/icons/large/classicon_warlock.jpg" height="24" width="24" /></div>
+         <div class="divDKP">249</div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer">Bodicca</div>
+         <div class="divClass" style="width: 150px;"><img src="https://wow.zamimg.com/images/wow/icons/large/classicon_hunter.jpg" height="24" width="24" /></div>
+         <div class="divDKP">342</div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer">Cainnis</div>
+         <div class="divClass" style="width: 150px;"><img src="https://wow.zamimg.com/images/wow/icons/large/classicon_druid.jpg" height="24" width="24" /></div>
+         <div class="divDKP">279</div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer">Cellise</div>
+         <div class="divClass" style="width: 150px;"><img src="https://wow.zamimg.com/images/wow/icons/large/classicon_druid.jpg" height="24" width="24" /></div>
+         <div class="divDKP">112</div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer">Craftbeer</div>
+         <div class="divClass" style="width: 150px;"><img src="https://wow.zamimg.com/images/wow/icons/large/classicon_hunter.jpg" height="24" width="24" /></div>
+         <div class="divDKP">150</div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer">Dekubii</div>
+         <div class="divClass" style="width: 150px;"><img src="https://wow.zamimg.com/images/wow/icons/large/classicon_druid.jpg" height="24" width="24" /></div>
+         <div class="divDKP">342</div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer">Dharkphoenix</div>
+         <div class="divClass" style="width: 150px;"><img src="https://wow.zamimg.com/images/wow/icons/large/classicon_warlock.jpg" height="24" width="24" /></div>
+         <div class="divDKP">85</div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer">Ebonyshock</div>
+         <div class="divClass" style="width: 150px;"><img src="https://wow.zamimg.com/images/wow/icons/large/classicon_paladin.jpg" height="24" width="24" /></div>
+         <div class="divDKP">342</div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer">Fatbatman</div>
+         <div class="divClass" style="width: 150px;"><img src="https://wow.zamimg.com/images/wow/icons/large/classicon_hunter.jpg" height="24" width="24" /></div>
+         <div class="divDKP">231</div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer">Goofee</div>
+         <div class="divClass" style="width: 150px;"><img src="https://wow.zamimg.com/images/wow/icons/large/classicon_paladin.jpg" height="24" width="24" /></div>
+         <div class="divDKP">267</div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer">Hailix</div>
+         <div class="divClass" style="width: 150px;"><img src="https://wow.zamimg.com/images/wow/icons/large/classicon_rogue.jpg" height="24" width="24" /></div>
+         <div class="divDKP">85</div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer">Hungies</div>
+         <div class="divClass" style="width: 150px;"><img src="https://wow.zamimg.com/images/wow/icons/large/classicon_warrior.jpg" height="24" width="24" /></div>
+         <div class="divDKP">342</div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer">Ivoryaim</div>
+         <div class="divClass" style="width: 150px;"><img src="https://wow.zamimg.com/images/wow/icons/large/classicon_hunter.jpg" height="24" width="24" /></div>
+         <div class="divDKP">342</div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer">Jerrygoodman</div>
+         <div class="divClass" style="width: 150px;"><img src="https://wow.zamimg.com/images/wow/icons/large/classicon_warlock.jpg" height="24" width="24" /></div>
+         <div class="divDKP">154</div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer">Korikybear</div>
+         <div class="divClass" style="width: 150px;"><img src="https://wow.zamimg.com/images/wow/icons/large/classicon_druid.jpg" height="24" width="24" /></div>
+         <div class="divDKP">129</div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer">Ledaa</div>
+         <div class="divClass" style="width: 150px;"><img src="https://wow.zamimg.com/images/wow/icons/large/classicon_shaman.jpg" height="24" width="24" /></div>
+         <div class="divDKP">335</div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer">Matotem</div>
+         <div class="divClass" style="width: 150px;"><img src="https://wow.zamimg.com/images/wow/icons/large/classicon_shaman.jpg" height="24" width="24" /></div>
+         <div class="divDKP">342</div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer">Merywen</div>
+         <div class="divClass" style="width: 150px;"><img src="https://wow.zamimg.com/images/wow/icons/large/classicon_mage.jpg" height="24" width="24" /></div>
+         <div class="divDKP">342</div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer">Mesw</div>
+         <div class="divClass" style="width: 150px;"><img src="https://wow.zamimg.com/images/wow/icons/large/classicon_warrior.jpg" height="24" width="24" /></div>
+         <div class="divDKP">158</div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer">Mikeysmash</div>
+         <div class="divClass" style="width: 150px;"><img src="https://wow.zamimg.com/images/wow/icons/large/classicon_paladin.jpg" height="24" width="24" /></div>
+         <div class="divDKP">106</div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer">Pottshunt</div>
+         <div class="divClass" style="width: 150px;"><img src="https://wow.zamimg.com/images/wow/icons/large/classicon_hunter.jpg" height="24" width="24" /></div>
+         <div class="divDKP">0</div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer">Simpforhealz</div>
+         <div class="divClass" style="width: 150px;"><img src="https://wow.zamimg.com/images/wow/icons/large/classicon_priest.jpg" height="24" width="24" /></div>
+         <div class="divDKP">44</div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer">Solairra</div>
+         <div class="divClass" style="width: 150px;"><img src="https://wow.zamimg.com/images/wow/icons/large/classicon_priest.jpg" height="24" width="24" /></div>
+         <div class="divDKP">257</div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer">Stormtempter</div>
+         <div class="divClass" style="width: 150px;"><img src="https://wow.zamimg.com/images/wow/icons/large/classicon_shaman.jpg" height="24" width="24" /></div>
+         <div class="divDKP">342</div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer">Thordane</div>
+         <div class="divClass" style="width: 150px;"><img src="https://wow.zamimg.com/images/wow/icons/large/classicon_paladin.jpg" height="24" width="24" /></div>
+         <div class="divDKP">342</div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer">Thundermaker</div>
+         <div class="divClass" style="width: 150px;"><img src="https://wow.zamimg.com/images/wow/icons/large/classicon_shaman.jpg" height="24" width="24" /></div>
+         <div class="divDKP">342</div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer">Valentînes</div>
+         <div class="divClass" style="width: 150px;"><img src="https://wow.zamimg.com/images/wow/icons/large/classicon_paladin.jpg" height="24" width="24" /></div>
+         <div class="divDKP">342</div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer">Vendretta</div>
+         <div class="divClass" style="width: 150px;"><img src="https://wow.zamimg.com/images/wow/icons/large/classicon_druid.jpg" height="24" width="24" /></div>
+         <div class="divDKP">305</div>
+      </div>
+   </div>
+</div>
+</div><div id="DKPHistory" class="tab" style="display:none;"><div class="divTable" style="width: 95%;border: 1px solid #000;">
+   <div class="divTableBody">
+      <div class="divTableRow">
+         <div class="divPlayerHeader">Players</div>
+         <div class="divClassHeader" style="width: 4%;">DKP</div>
+         <div class="divDKPHeader">Date/Reason</div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="font-size: 0.7em; width: 71%;">Mikeysmash, </div>
+         <div class="divClass" style="width: 4%;">60</div>
+         <div class="divDKP" style="width: 25%; font-size: 0.7em;">Other - 6-29 Pro-rate Karazhan<br />(06/30/21 18:06:15) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="font-size: 0.7em; width: 71%;">Ardritha, Blickem, Bodicca, Cainnis, Cellise, Dekubii, Dharkphoenix, Ebonyshock, Goofee, Hailix, Hungies, Korikybear, Ivoryaim, Ledaa, Matotem, Merywen, Stormtempter, Thordane, Thundermaker, Valentînes, Vendretta, </div>
+         <div class="divClass" style="width: 4%;">75</div>
+         <div class="divDKP" style="width: 25%; font-size: 0.7em;">Other - 6-29 Karazhan<br />(06/30/21 18:05:51) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="font-size: 0.7em; width: 71%;">Ardritha, Blickem, Bodicca, Cainnis, Cellise, Dekubii, Dharkphoenix, Ebonyshock, Fatbatman, Goofee, Hailix, Hungies, Korikybear, Ivoryaim, Jerrygoodman, Ledaa, Matotem, Merywen, Mikeysmash, Stormtempter, Thordane, Thundermaker, Valentînes, Vendretta, </div>
+         <div class="divClass" style="width: 4%;">10</div>
+         <div class="divDKP" style="width: 25%; font-size: 0.7em;">Other - 6-29 Discord Signup<br />(06/30/21 18:04:51) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="font-size: 0.7em; width: 71%;">Ardritha, Asoka, Blickem, Bodicca, Cainnis, Cellise, Craftbeer, Dekubii, Ebonyshock, Fatbatman, Goofee, Hungies, Ivoryaim, Jerrygoodman, Korikybear, Ledaa, Matotem, Merywen, Mesw, Mikeysmash, Simpforhealz, Solairra, Stormtempter, Thordane, Thundermaker, Valentînes, Vendretta, </div>
+         <div class="divClass" style="width: 4%;">-86,-50,-54,-86,-64,-9,-50,-86,-86,-74,-61,-86,-86,-48,-14,-83,-86,-86,-52,-12,-14,-86,-86,-86,-86,-86,-73,-25%</div>
+         <div class="divDKP" style="width: 25%; font-size: 0.7em;">Weekly Decay<br />(06/28/21 23:26:35) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="font-size: 0.7em; width: 71%;">Ardritha, Jerrygoodman, Goofee, Mikeysmash, Hungies, Vendretta, Hailix, Bodicca, Ivoryaim, Ledaa, Cainnis, Solairra, Matotem, Simpforhealz, Merywen, Cellise, Ebonyshock, Blickem, Dharkphoenix, Dekubii, Thundermaker, Thordane, Korikybear, Valentînes, Stormtempter, </div>
+         <div class="divClass" style="width: 4%;">10</div>
+         <div class="divDKP" style="width: 25%; font-size: 0.7em;">Raid Completion Bonus<br />(06/28/21 21:17:03) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="font-size: 0.7em; width: 71%;">Ardritha, Jerrygoodman, Goofee, Mikeysmash, Hungies, Vendretta, Hailix, Bodicca, Ivoryaim, Ledaa, Cainnis, Solairra, Matotem, Simpforhealz, Merywen, Cellise, Ebonyshock, Blickem, Dharkphoenix, Dekubii, Thundermaker, Thordane, Korikybear, Valentînes, Stormtempter, </div>
+         <div class="divClass" style="width: 4%;">1</div>
+         <div class="divDKP" style="width: 25%; font-size: 0.7em;">Time Interval Bonus<br />(06/28/21 21:16:39) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="font-size: 0.7em; width: 71%;">Ardritha, Jerrygoodman, Goofee, Mikeysmash, Hungies, Vendretta, Hailix, Bodicca, Ivoryaim, Ledaa, Cainnis, Solairra, Matotem, Simpforhealz, Merywen, Cellise, Ebonyshock, Blickem, Dharkphoenix, Dekubii, Thundermaker, Thordane, Korikybear, Valentînes, Stormtempter, </div>
+         <div class="divClass" style="width: 4%;">5</div>
+         <div class="divDKP" style="width: 25%; font-size: 0.7em;">Magtheridon's Lair: Magtheridon<br />(06/28/21 21:16:35) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="font-size: 0.7em; width: 71%;">Ardritha, Jerrygoodman, Goofee, Mikeysmash, Hungies, Vendretta, Hailix, Bodicca, Ivoryaim, Ledaa, Cainnis, Solairra, Matotem, Simpforhealz, Merywen, Cellise, Ebonyshock, Blickem, Dharkphoenix, Dekubii, Thundermaker, Thordane, Korikybear, Valentînes, Stormtempter, </div>
+         <div class="divClass" style="width: 4%;">1</div>
+         <div class="divDKP" style="width: 25%; font-size: 0.7em;">Time Interval Bonus<br />(06/28/21 21:00:21) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="font-size: 0.7em; width: 71%;">Ardritha, Jerrygoodman, Goofee, Mikeysmash, Hungies, Vendretta, Hailix, Bodicca, Ivoryaim, Ledaa, Cainnis, Solairra, Matotem, Simpforhealz, Merywen, Cellise, Ebonyshock, Blickem, Dharkphoenix, Dekubii, Thundermaker, Thordane, Korikybear, Valentînes, Stormtempter, </div>
+         <div class="divClass" style="width: 4%;">1</div>
+         <div class="divDKP" style="width: 25%; font-size: 0.7em;">Time Interval Bonus<br />(06/28/21 20:50:43) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="font-size: 0.7em; width: 71%;">Ardritha, Jerrygoodman, Goofee, Mikeysmash, Hungies, Vendretta, Hailix, Bodicca, Ivoryaim, Ledaa, Cainnis, Solairra, Matotem, Simpforhealz, Merywen, Cellise, Ebonyshock, Blickem, Dharkphoenix, Dekubii, Thundermaker, Thordane, Korikybear, Valentînes, Stormtempter, </div>
+         <div class="divClass" style="width: 4%;">1</div>
+         <div class="divDKP" style="width: 25%; font-size: 0.7em;">Time Interval Bonus<br />(06/28/21 20:39:55) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="font-size: 0.7em; width: 71%;">Ardritha, Jerrygoodman, Goofee, Mikeysmash, Hungies, Vendretta, Hailix, Bodicca, Ivoryaim, Ledaa, Cainnis, Solairra, Matotem, Simpforhealz, Merywen, Cellise, Ebonyshock, Blickem, Dharkphoenix, Dekubii, Thundermaker, Thordane, Korikybear, Valentînes, Stormtempter, </div>
+         <div class="divClass" style="width: 4%;">1</div>
+         <div class="divDKP" style="width: 25%; font-size: 0.7em;">Time Interval Bonus<br />(06/28/21 20:29:53) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="font-size: 0.7em; width: 71%;">Ardritha, Jerrygoodman, Goofee, Mikeysmash, Hungies, Vendretta, Hailix, Bodicca, Ivoryaim, Ledaa, Cainnis, Solairra, Matotem, Simpforhealz, Merywen, Cellise, Ebonyshock, Blickem, Dharkphoenix, Dekubii, Thundermaker, Thordane, Korikybear, Valentînes, Stormtempter, </div>
+         <div class="divClass" style="width: 4%;">1</div>
+         <div class="divDKP" style="width: 25%; font-size: 0.7em;">Time Interval Bonus<br />(06/28/21 20:25:10) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="font-size: 0.7em; width: 71%;">Ardritha, Jerrygoodman, Goofee, Mikeysmash, Hungies, Vendretta, Hailix, Bodicca, Ivoryaim, Ledaa, Cainnis, Solairra, Matotem, Simpforhealz, Merywen, Cellise, Ebonyshock, Blickem, Dharkphoenix, Dekubii, Thundermaker, Thordane, Korikybear, Valentînes, Stormtempter, </div>
+         <div class="divClass" style="width: 4%;">1</div>
+         <div class="divDKP" style="width: 25%; font-size: 0.7em;">Time Interval Bonus<br />(06/28/21 20:09:48) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="font-size: 0.7em; width: 71%;">Ardritha, Jerrygoodman, Goofee, Mikeysmash, Hungies, Vendretta, Hailix, Bodicca, Ivoryaim, Ledaa, Cainnis, Solairra, Matotem, Simpforhealz, Merywen, Cellise, Ebonyshock, Blickem, Dharkphoenix, Dekubii, Thundermaker, Thordane, Korikybear, Valentînes, Stormtempter, </div>
+         <div class="divClass" style="width: 4%;">1</div>
+         <div class="divDKP" style="width: 25%; font-size: 0.7em;">Time Interval Bonus<br />(06/28/21 19:59:45) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="font-size: 0.7em; width: 71%;">Ardritha, Jerrygoodman, Goofee, Mikeysmash, Hungies, Vendretta, Hailix, Bodicca, Ivoryaim, Ledaa, Cainnis, Solairra, Matotem, Simpforhealz, Merywen, Cellise, Ebonyshock, Blickem, Dharkphoenix, Dekubii, Thundermaker, Thordane, Korikybear, Valentînes, Stormtempter, </div>
+         <div class="divClass" style="width: 4%;">1</div>
+         <div class="divDKP" style="width: 25%; font-size: 0.7em;">Time Interval Bonus<br />(06/28/21 19:49:43) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="font-size: 0.7em; width: 71%;">Ardritha, Jerrygoodman, Goofee, Mikeysmash, Hungies, Vendretta, Hailix, Bodicca, Ivoryaim, Ledaa, Cainnis, Solairra, Matotem, Simpforhealz, Merywen, Cellise, Ebonyshock, Blickem, Dharkphoenix, Dekubii, Thundermaker, Thordane, Korikybear, Valentînes, Stormtempter, </div>
+         <div class="divClass" style="width: 4%;">1</div>
+         <div class="divDKP" style="width: 25%; font-size: 0.7em;">Time Interval Bonus<br />(06/28/21 19:39:57) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="font-size: 0.7em; width: 71%;">Ardritha, Goofee, Mikeysmash, Hungies, Vendretta, Hailix, Bodicca, Ivoryaim, Ledaa, Cainnis, Solairra, Matotem, Simpforhealz, Merywen, Cellise, Ebonyshock, Blickem, Dharkphoenix, Dekubii, Thundermaker, Thordane, Korikybear, Valentînes, Stormtempter, </div>
+         <div class="divClass" style="width: 4%;">1</div>
+         <div class="divDKP" style="width: 25%; font-size: 0.7em;">Time Interval Bonus<br />(06/28/21 19:29:39) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="font-size: 0.7em; width: 71%;">Ardritha, Jerrygoodman, Goofee, Mikeysmash, Hungies, Vendretta, Hailix, Bodicca, Ivoryaim, Ledaa, Cainnis, Solairra, Matotem, Simpforhealz, Merywen, Cellise, Ebonyshock, Blickem, Dharkphoenix, Dekubii, Thundermaker, Thordane, Korikybear, Valentînes, Stormtempter, </div>
+         <div class="divClass" style="width: 4%;">1</div>
+         <div class="divDKP" style="width: 25%; font-size: 0.7em;">Time Interval Bonus<br />(06/28/21 19:25:42) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="font-size: 0.7em; width: 71%;">Ardritha, Jerrygoodman, Goofee, Mikeysmash, Hungies, Vendretta, Hailix, Bodicca, Ivoryaim, Ledaa, Cainnis, Solairra, Matotem, Simpforhealz, Merywen, Cellise, Ebonyshock, Blickem, Dharkphoenix, Dekubii, Thundermaker, Thordane, Korikybear, Valentînes, Stormtempter, </div>
+         <div class="divClass" style="width: 4%;">5</div>
+         <div class="divDKP" style="width: 25%; font-size: 0.7em;">Gruul's Lair: Gruul the Dragonkiller<br />(06/28/21 19:25:37) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="font-size: 0.7em; width: 71%;">Ardritha, Jerrygoodman, Goofee, Mikeysmash, Hungies, Vendretta, Hailix, Bodicca, Ivoryaim, Ledaa, Cainnis, Solairra, Matotem, Simpforhealz, Merywen, Cellise, Ebonyshock, Blickem, Dharkphoenix, Dekubii, Thundermaker, Thordane, Korikybear, Valentînes, Stormtempter, </div>
+         <div class="divClass" style="width: 4%;">1</div>
+         <div class="divDKP" style="width: 25%; font-size: 0.7em;">Time Interval Bonus<br />(06/28/21 19:09:35) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="font-size: 0.7em; width: 71%;">Ardritha, Jerrygoodman, Goofee, Mikeysmash, Hungies, Vendretta, Hailix, Bodicca, Ivoryaim, Ledaa, Cainnis, Solairra, Matotem, Simpforhealz, Merywen, Cellise, Ebonyshock, Blickem, Dharkphoenix, Dekubii, Thundermaker, Thordane, Korikybear, Valentînes, Stormtempter, </div>
+         <div class="divClass" style="width: 4%;">5</div>
+         <div class="divDKP" style="width: 25%; font-size: 0.7em;">Gruul's Lair: High King Maulgar<br />(06/28/21 19:08:28) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="font-size: 0.7em; width: 71%;">Ardritha, Jerrygoodman, Goofee, Mikeysmash, Hungies, Vendretta, Hailix, Bodicca, Ivoryaim, Ledaa, Cainnis, Solairra, Matotem, Simpforhealz, Merywen, Cellise, Ebonyshock, Blickem, Dharkphoenix, Dekubii, Thundermaker, Thordane, Korikybear, Valentînes, Stormtempter, </div>
+         <div class="divClass" style="width: 4%;">10</div>
+         <div class="divDKP" style="width: 25%; font-size: 0.7em;">On Time Bonus<br />(06/28/21 18:59:32) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="font-size: 0.7em; width: 71%;">Ardritha, Blickem, Bodicca, Cainnis, Cellise, Dekubii, Dharkphoenix, Ebonyshock, Fatbatman, Goofee, Hailix, Hungies, Ivoryaim, Jerrygoodman, Korikybear, Ledaa, Matotem, Merywen, Mikeysmash, Simpforhealz, Solairra, Stormtempter, Thordane, Thundermaker, Valentînes, Vendretta, </div>
+         <div class="divClass" style="width: 4%;">10</div>
+         <div class="divDKP" style="width: 25%; font-size: 0.7em;">Other - 6/28 Discord Signup<br />(06/28/21 18:53:00) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="font-size: 0.7em; width: 71%;">Ardritha, Ledaa, Ivoryaim, Goofee, Fatbatman, Dharkphoenix, Ebonyshock, Dekubii, Mikeysmash, Thundermaker, Matotem, Jerrygoodman, </div>
+         <div class="divClass" style="width: 4%;">75</div>
+         <div class="divDKP" style="width: 25%; font-size: 0.7em;">Other - 6/23 Kara<br />(06/23/21 23:29:13) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="font-size: 0.7em; width: 71%;">Ardritha, Blickem, Bodicca, Cellise, Dekubii, Dharkphoenix, Ebonyshock, Fatbatman, Goofee, Hailix, Hungies, Ivoryaim, Jerrygoodman, Matotem, Merywen, Mesw, Mikeysmash, Solairra, Stormtempter, Thordane, Thundermaker, Valentînes, Vendretta, </div>
+         <div class="divClass" style="width: 4%;">10</div>
+         <div class="divDKP" style="width: 25%; font-size: 0.7em;">Other - 6/22 Kara Discord Signups<br />(06/23/21 18:06:11) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="font-size: 0.7em; width: 71%;">Hailix, </div>
+         <div class="divClass" style="width: 4%;">-200</div>
+         <div class="divDKP" style="width: 25%; font-size: 0.7em;">Delete Entry<br />(06/23/21 16:49:04) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="font-size: 0.7em; width: 71%;">Hailix, </div>
+         <div class="divClass" style="width: 4%;">200</div>
+         <div class="divDKP" style="width: 25%; font-size: 0.7em;">On Time Bonus<br />(06/23/21 16:01:30) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="font-size: 0.7em; width: 71%;">Merywen, Solairra, Thordane, Stormtempter, Valentînes, Hungies, Blickem, Hailix, Vendretta, Bodicca, </div>
+         <div class="divClass" style="width: 4%;">75</div>
+         <div class="divDKP" style="width: 25%; font-size: 0.7em;">Other - 6-22 kara<br />(06/22/21 21:38:23) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="font-size: 0.7em; width: 71%;">Hailix, </div>
+         <div class="divClass" style="width: 4%;">200</div>
+         <div class="divDKP" style="width: 25%; font-size: 0.7em;">Other - Initial seed<br />(06/19/21 14:16:54) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="font-size: 0.7em; width: 71%;">Blickem, Ivoryaim, Matotem, Dekubii, Merywen, Cellise, Ledaa, Craftbeer, Cainnis, Goofee, Jerrygoodman, Thordane, Stormtempter, Dharkphoenix, Solairra, Mesw, Mikeysmash, Thundermaker, Bodicca, Valentînes, Vendretta, Asoka, Ebonyshock, Hungies, Fatbatman, Ardritha, </div>
+         <div class="divClass" style="width: 4%;">200</div>
+         <div class="divDKP" style="width: 25%; font-size: 0.7em;">Other - Initial Seed<br />(06/19/21 13:26:48) </div>
+      </div>
+   </div>
+</div>
+</div><div id="LootHistory" class="tab" style="display:none;"><div class="divTable" style="width: 50%;border: 1px solid #000;">
+   <div class="divTableBody">
+      <div class="divTableRow">
+         <div class="divPlayerHeader">Loot</div>
+         <div class="divClassHeader">Player</div>
+         <div class="divDKPHeader">From</div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="width: 40%;"><a href="https://tbc.wowhead.com/item=32385" data-wowhead="item=32385"></a> (-343 DKP)</div>
+         <div class="divClass" style="width: 20%;">Dharkphoenix</div>
+         <div class="divDKP" style="width: 40%; font-size: 0.7em;">Magtheridon's Lair: Magtheridon<br />(06/28/21 21:21:04) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="width: 40%;"><a href="https://tbc.wowhead.com/item=28779" data-wowhead="item=28779"></a> (-50 DKP)</div>
+         <div class="divClass" style="width: 20%;">Goofee</div>
+         <div class="divDKP" style="width: 40%; font-size: 0.7em;">Magtheridon's Lair: Magtheridon<br />(06/28/21 21:20:05) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="width: 40%;"><a href="https://tbc.wowhead.com/item=28781" data-wowhead="item=28781"></a> (-50 DKP)</div>
+         <div class="divClass" style="width: 20%;">Vendretta</div>
+         <div class="divDKP" style="width: 40%; font-size: 0.7em;">Magtheridon's Lair: Magtheridon<br />(06/28/21 21:19:22) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="width: 40%;"><a href="https://tbc.wowhead.com/item=29754" data-wowhead="item=29754"></a> (-343 DKP)</div>
+         <div class="divClass" style="width: 20%;">Hailix</div>
+         <div class="divDKP" style="width: 40%; font-size: 0.7em;">Magtheridon's Lair: Magtheridon<br />(06/28/21 21:18:32) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="width: 40%;"><a href="https://tbc.wowhead.com/item=29767" data-wowhead="item=29767"></a> (-232 DKP)</div>
+         <div class="divClass" style="width: 20%;">Cellise</div>
+         <div class="divDKP" style="width: 40%; font-size: 0.7em;">Gruul's Lair: Gruul the Dragonkiller<br />(06/28/21 19:28:44) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="width: 40%;"><a href="https://tbc.wowhead.com/item=28804" data-wowhead="item=28804"></a> (-150 DKP)</div>
+         <div class="divClass" style="width: 20%;">Jerrygoodman</div>
+         <div class="divDKP" style="width: 40%; font-size: 0.7em;">Gruul's Lair: Gruul the Dragonkiller<br />(06/28/21 19:27:35) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="width: 40%;"><a href="https://tbc.wowhead.com/item=28794" data-wowhead="item=28794"></a> (-50 DKP)</div>
+         <div class="divClass" style="width: 20%;">Goofee</div>
+         <div class="divDKP" style="width: 40%; font-size: 0.7em;">Gruul's Lair: Gruul the Dragonkiller<br />(06/28/21 19:26:48) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="width: 40%;"><a href="https://tbc.wowhead.com/item=28799" data-wowhead="item=28799"></a> (-125 DKP)</div>
+         <div class="divClass" style="width: 20%;">Blickem</div>
+         <div class="divDKP" style="width: 40%; font-size: 0.7em;">Gruul's Lair: High King Maulgar<br />(06/28/21 19:11:28) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="width: 40%;"><a href="https://tbc.wowhead.com/item=29763" data-wowhead="item=29763"></a> (-295 DKP)</div>
+         <div class="divClass" style="width: 20%;">Mikeysmash</div>
+         <div class="divDKP" style="width: 40%; font-size: 0.7em;">Gruul's Lair: High King Maulgar<br />(06/28/21 19:10:32) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="width: 40%;"><a href="https://tbc.wowhead.com/item=23519" data-wowhead="item=23519"></a> (50 DKP)</div>
+         <div class="divClass" style="width: 20%;">Ardritha</div>
+         <div class="divDKP" style="width: 40%; font-size: 0.7em;">Karazhan: Prince Malchezaar<br />(06/19/21 13:42:57) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="width: 40%;"><a href="https://tbc.wowhead.com/item=23519" data-wowhead="item=23519"></a> (50 DKP)</div>
+         <div class="divClass" style="width: 20%;">Ardritha</div>
+         <div class="divDKP" style="width: 40%; font-size: 0.7em;">Karazhan: Prince Malchezaar<br />(06/19/21 13:42:53) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="width: 40%;"><a href="https://tbc.wowhead.com/item=23519" data-wowhead="item=23519"></a> (-50 DKP)</div>
+         <div class="divClass" style="width: 20%;">Ardritha</div>
+         <div class="divDKP" style="width: 40%; font-size: 0.7em;">Karazhan: Prince Malchezaar<br />(06/19/21 13:38:58) </div>
+      </div>
+      <div class="divTableRow">
+         <div class="divPlayer" style="width: 40%;"><a href="https://tbc.wowhead.com/item=23519" data-wowhead="item=23519"></a> (-50 DKP)</div>
+         <div class="divClass" style="width: 20%;">Ardritha</div>
+         <div class="divDKP" style="width: 40%; font-size: 0.7em;">Karazhan: Prince Malchezaar<br />(06/19/21 13:36:56) </div>
+      </div>
+   </div>
+</div>
+</div>
+</html>
